@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#game {
+  width: 500px;
+  height: 200px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+#character {
+  width: 20px;
+  height: 50px;
+  position: relative;
+  top: 128px;
+}
+
+.character-animation {
+  animation: jump 1s linear forwards normal;
+}
+
+#character #dino {
+  width: 60px;
+  height: 70px;
+}
+
+@keyframes jump {
+  0% {
+    top: 128px;
+  }
+  30% {
+    top: 40px;
+  }
+  70% {
+    top: 40px;
+  }
+  100% {
+    top: 128px;
+  }
+}
+
+#block {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 80px;
+  left: 440px;
+  animation: block 1.8s linear infinite normal forwards;
+}
+
+#cactus {
+  width: 40px;
+}
+
+@keyframes block {
+  0% {
+    left: 440px;
+  }
+  100% {
+    left: -40px;
+  }
+}
+
+
+#replay {
+  width: 20px;
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 240px;
+  cursor: pointer;
+}
+
+#icon {
+  width: 20px;
+  position: relative;
+
+}
